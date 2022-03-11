@@ -8,9 +8,9 @@ mydb = mysql.connector.connect(
 )
 
 def insert_data(mydb):
-    alternatif = input("no produk : ")
-    bobot = input("no kategori : ")
-    peran = input("nama produk : ")
+    alternatif = input("alternatif : ")
+    bobot = input("Bobot : ")
+    peran = input("Peran : ")
  
     val = (alternatif, bobot, peran)
 
