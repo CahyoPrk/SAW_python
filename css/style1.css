@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.deo-admin-wrap {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.deo-admin-wrap p {
+  font-weight: normal;
+  margin: 0 0 10px;
+  color: #838992;
+}
+
+.deo-admin-wrap h4 {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+/* Header */
+.deo-admin-header,
+.deo-admin-footer {
+  padding: 15px 25px;
+  background-color: #3a3f46;
+}
+
+.deo-admin-header {
+  display: table;
+  width: 100%;
+}
+
+.deo-admin-header-logo {
+  float: left;
+  width: 40%;
+}
+
+.deo-admin-header-logo {
+  color: white;
+}
+
+.deo-admin-header-buttons {
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.deo-admin-header-logo-image {
+  max-height: 51px;
+}
+
+.deo-admin-body {
+  position: relative;
+}
+
+/* Footer */
+.deo-admin-footer {
+  text-align: right;
+}
+
+/*  Tabs  */
+.deo-admin-tabs {
+  background-color: #191b1f;
+  color: #838992;
+  float: left;
+  width: 250px;
+  height: 100%;
+}
+
+.deo-admin-tabs:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #191b1f;
+  width: 250px;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.deo-admin-tabs ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.deo-admin-tabs li {
+  border-bottom: 1px solid #3a3f46;
+  cursor: pointer;
+}
+
+.deo-admin-tabs li i {
+  margin-right: 8px;
+  color: #838992;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.deo-admin-tabs li a {
+  padding: 13px 25px;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.deo-admin-tabs .active,
+.deo-admin-tabs li:hover,
+.deo-admin-tabs li.active i {
+  color: #fff;
+}
+
+/* Tabs contents */
+.deo-admin-tabs-content {
+  background-color: #fff;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.deo-admin-tabs-content h2 {
+  color: #707070;
+}
+
+.deo-admin-tabs-section {
+  display: none;
+  border: 2px solid #707070;
+  width: 35%;
+  margin-top: 10px;
+}
+
+.deo-admin-tabs-section.active {
+  display: block;
+}
+
+.input-kriteria {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 90%;
+  padding-bottom: 100px;
+}
+
+.input-kriteria p {
+  font-weight: bold;
+  color: #707070;
+}
+
+.input-kriteria input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(89, 89, 89);
+  padding-left: 8px;
+}
+
+.button-input button {
+  width: 20%;
+  height: 30px;
+  margin-top: 15px;
+  border: none;
+  background-color: #41ba73;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.deo-admin-tabs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.deo-admin-tabs-table tr {
+  border-bottom: 1px solid #d8dce2;
+}
+
+.deo-admin-tabs-table tr > th {
+  width: 30%;
+  padding: 15px 0;
+}
+
+.rules {
+  border: 2px solid #707070;
+  margin-top: 17px;
+  width: 50%;
+}
+
+/* Inputs */
+.deo-admin-input,
+.deo-admin-select {
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #d8dce2;
+}
+
+/* Switcher */
+.deo-switcher {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.deo-switcher-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.deo-switcher-button {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #ebedef;
+  color: #838992;
+  float: left;
+  font-weight: 600;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 2px 0 #d1d7de;
+}
+
+.deo-switcher-button.active {
+  background-color: #83cc3f;
+  color: #fff;
+  box-shadow: 0 2px 0 #77b939;
+}
+
+.deo-switcher-button ~ .deo-switcher-button {
+  border-radius: 0 3px 3px 0;
+}
+
+/* Buttons */
+.button {
+  font-family: "Segoe UI", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  margin: 0;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  color: #555;
+  border-color: #ccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button-primary {
+  background: #0085ba;
+  border-color: #0073aa #006799 #006799;
+  -webkit-box-shadow: 0 1px 0 #006799;
+  box-shadow: 0 1px 0 #006799;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
