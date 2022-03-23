@@ -298,3 +298,36 @@ body {
   text-decoration: none;
   text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
 }
+
+.intkriteria {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.intkriteria p {
+  font-weight: bold;
+  padding-left: 10px;
+  color: #707070;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intkriteria input {
+  margin-left: 10px;
+  height: 22px;
+  width: 40px;
+  padding-left: 5px;
+  border: 1px solid rgb(140, 140, 140);
+}
+
+.butkriteria button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: #528fba;
+  color: white;
+  font-weight: bold;
+}
